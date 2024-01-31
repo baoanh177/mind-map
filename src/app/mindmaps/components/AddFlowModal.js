@@ -1,5 +1,5 @@
 "use client"
-import { useState } from "react"
+import { memo, useState } from "react"
 import { v4 as uuid } from "uuid"
 import { IoMdClose } from "react-icons/io";
 import { addFlow } from "../actions/addFlow"
@@ -110,4 +110,4 @@ function AddFlowModal({ userId }) {
     </>
 }
 
-export default AddFlowModal;
+export default memo(AddFlowModal)

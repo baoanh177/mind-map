@@ -10,7 +10,7 @@ import ReactFlow, {
 } from "reactflow"
 import { useCallback, useRef, useMemo, useContext, useEffect } from "react"
 import "reactflow/dist/style.css"
-import EditNode from "./components/EditNode"
+import EditNode from "./components/nodes/EditNode"
 import { FlowContext } from "~/providers/FlowProvider"
 import { updateFlow } from "../actions/updateFlow"
 

@@ -18,19 +18,19 @@ function Header({children}) {
                         "
                     >
                         <li>
-                            <Link href="/" className={pathname == '/' ? 'active' : ''}>Home</Link>
+                            <Link href="/" className={pathname == '/' ? 'active' : ''} scroll={false}>Home</Link>
                         </li>
                         <li>
-                            <Link href="/about" className={pathname == '/about' ? 'active' : ''}>About</Link>
+                            <Link href="/about" className={pathname == '/about' ? 'active' : ''} scroll={false}>About</Link>
                         </li>
                         <li>
-                            <Link href="/features" className={pathname == '/features' ? 'active' : ''}>Features</Link>
+                            <Link href="/features" className={pathname == '/features' ? 'active' : ''} scroll={false}>Features</Link>
                         </li>
                         <li>
-                            <Link href="/prices" className={pathname == '/prices' ? 'active' : ''}>Prices</Link>
+                            <Link href="/prices" className={pathname == '/prices' ? 'active' : ''} scroll={false}>Prices</Link>
                         </li>
                         <li>
-                            <Link href="/contact" className={pathname == '/contact' ? 'active' : ''}>Contact</Link>
+                            <Link href="/contact" className={pathname == '/contact' ? 'active' : ''} scroll={false}>Contact</Link>
                         </li>
                     </ul>
                 </nav>

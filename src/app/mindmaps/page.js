@@ -2,8 +2,8 @@ import { getSession } from "@auth0/nextjs-auth0"
 import Header from "../components/Header"
 import HeaderInfo from "../components/HeaderInfo"
 import AddFlowModal from "./components/AddFlowModal"
-import FlowCard from "./components/FlowCard"
 import { getAllFlows } from "./actions/getAllFlows"
+import Flows from "./components/Flows"
 
 async function MindmapPage() {
     const userSession = await getSession()
@@ -24,9 +24,7 @@ async function MindmapPage() {
                     <AddFlowModal userId={userId} />
                 </div>
                 <div className="my-5">
-                    <ul className="h-[220px] w-full px-4 border-x flex gap-4">
-                        {flows && flows.reverse().map(flow => <FlowCard key={flow.id} {...flow}/>)}
-                    </ul>
+                    <Flows flows={flows} />
                 </div>
             </div>
         </>

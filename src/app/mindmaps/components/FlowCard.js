@@ -3,10 +3,10 @@ import Image from "next/image"
 import { images } from "~/assets/images/images";
 import clsx from "clsx";
 import { useRouter } from "next/navigation"
-import { useState } from "react"
+import { memo, useState } from "react"
 import { getDate } from "../helpers/getDate"
 
-function FlowCard({ id, title, created_at, isPublic }) {
+function FlowCard({ id, title, created_at, isPublic, setContextMenu }) {
     const router = useRouter()
     const [isLoading, setLoading] = useState(false)
 
@@ -14,15 +14,27 @@ function FlowCard({ id, title, created_at, isPublic }) {
         router.push(`/mindmaps/${id}`)
         setLoading(true)
     }
-    
+
+    const handleShowCustomMenu = (e) => {
+        e.preventDefault()
+        console.log("Set")
+        setContextMenu({
+            id,
+            top: e.clientY,
+            left: e.clientX,
+            isOpen: true
+        })
+    }
+
     return <>
-        <li className="relative w-52 rounded-lg h-full border-2 [&>.overlay]:hover:opacity-100 [&>.overlay]:hover:visible overflow-hidden">
+        <li 
+            onContextMenu={handleShowCustomMenu}
+            className="relative min-w-52 w-52 rounded-lg h-full border-2 [&>.overlay]:hover:opacity-100 [&>.overlay]:hover:visible overflow-hidden"
+        >
             <div
                 onClick={handleRedirect}
                 className="overlay invisible opacity-0 absolute inset-0 bg-black bg-opacity-5 transition cursor-pointer z-10"
-            >
-                
-            </div>
+            ></div>
             <div className="h-3/4 border-b-2 relative">
                 {isLoading && 
                     <div className="absolute inset-0 flex items-center justify-center">
@@ -48,4 +60,4 @@ function FlowCard({ id, title, created_at, isPublic }) {
     </>
 }
 
-export default FlowCard;
+export default memo(FlowCard)
