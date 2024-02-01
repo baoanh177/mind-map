@@ -6,7 +6,7 @@ import { updateFlow } from "../../actions/updateFlow"
 import { toast } from "react-toastify"
 import Options from "./Options"
 
-function ShareModel({ setShareModel, flow, dataId, userData, flows }) {
+function OwnerShareModal({ setShareModel, flow, dataId, userData, flows }) {
     const [isPublic, setPublic] = useState(flow.isPublic)
     const [loading, setLoading] = useState(false)
 
@@ -38,7 +38,15 @@ function ShareModel({ setShareModel, flow, dataId, userData, flows }) {
                     Share Mindmap
                 </h3>
                 <Options isPublic={isPublic} setPublic={setPublic}/>
-                {isPublic && <ShareForm loading={loading} setLoading={setLoading} userData={userData} dataId={dataId} flow={flow} flows={flows} />}
+                {isPublic &&
+                <ShareForm 
+                    loading={loading} 
+                    setLoading={setLoading} 
+                    userData={userData}
+                    dataId={dataId} 
+                    flow={flow} 
+                    flows={flows} 
+                />}
                 <button 
                     form="share_form"
                     type="submit"
@@ -59,12 +67,8 @@ function ShareModel({ setShareModel, flow, dataId, userData, flows }) {
                     'Save'}
                 </button>
             </div>
-            <div
-                className="bg-black bg-opacity-50 fixed inset-0 z-20"
-                onClick={() => setShareModel(false)}
-            ></div>
         </>
     )
 }
 
-export default ShareModel
+export default OwnerShareModal
