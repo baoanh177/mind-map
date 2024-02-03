@@ -25,12 +25,14 @@
         "shared_link": "http://localhost:3000/mindmaps/5f96a536-ec62-4902-b5fd-3dec0f15e10a",
         "title": "New mindmap",
         "description": "Không có mô tả",
-        "role": "viewer",
+        "role": "editor",
         "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
       },
       "data": {
         "nodes": [
           {
+            "width": 150,
+            "height": 40,
             "id": "0",
             "position": {
               "x": -36,
@@ -41,8 +43,6 @@
             },
             "type": "input",
             "deletable": false,
-            "width": 150,
-            "height": 40,
             "selected": false,
             "positionAbsolute": {
               "x": -36,
@@ -51,59 +51,78 @@
             "dragging": false
           },
           {
+            "width": 150,
+            "height": 40,
             "id": "1",
             "position": {
-              "x": -167.5,
-              "y": -32.5
+              "x": -184.0525283914174,
+              "y": 2.2603096219765533
             },
             "type": "",
             "data": {
               "label": "Node 1"
             },
-            "width": 150,
-            "height": 40,
             "selected": false,
             "positionAbsolute": {
-              "x": -167.5,
-              "y": -32.5
+              "x": -184.0525283914174,
+              "y": 2.2603096219765533
             },
             "dragging": false
           },
           {
+            "width": 150,
+            "height": 40,
             "id": "2",
             "position": {
-              "x": -95,
-              "y": 46.5
+              "x": -98.86225662466407,
+              "y": 52.01750946380581
             },
             "type": "",
             "data": {
-              "label": "Node 2"
+              "label": "Node JS"
             },
-            "width": 150,
-            "height": 40,
             "selected": false,
             "positionAbsolute": {
-              "x": -95,
-              "y": 46.5
+              "x": -98.86225662466407,
+              "y": 52.01750946380581
             },
             "dragging": false
           },
           {
+            "width": 150,
+            "height": 40,
             "id": "3",
             "position": {
-              "x": 118,
-              "y": 75
+              "x": -12.764974292197511,
+              "y": 100.93229447988728
             },
             "type": "",
             "data": {
-              "label": "Node 3"
+              "label": "Node nhạc"
             },
+            "selected": false,
+            "positionAbsolute": {
+              "x": -12.764974292197511,
+              "y": 100.93229447988728
+            },
+            "dragging": false
+          },
+          {
             "width": 150,
             "height": 40,
+            "id": "4",
+            "position": {
+              "x": 80.56185773185932,
+              "y": -31.464228847807945
+            },
+            "type": "",
+            "data": {
+              "label": "Node Ruồi"
+            },
             "selected": true,
             "positionAbsolute": {
-              "x": 118,
-              "y": 75
+              "x": 80.56185773185932,
+              "y": -31.464228847807945
             },
             "dragging": false
           }
@@ -123,6 +142,11 @@
             "id": "f0-3",
             "source": "0",
             "target": "3"
+          },
+          {
+            "id": "f0-4",
+            "source": "0",
+            "target": "4"
           }
         ]
       }
