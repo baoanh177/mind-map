@@ -17,7 +17,6 @@ function FlowCard({ id, title, created_at, isPublic, setContextMenu }) {
 
     const handleShowCustomMenu = (e) => {
         e.preventDefault()
-        console.log("Set")
         setContextMenu({
             id,
             top: e.clientY,

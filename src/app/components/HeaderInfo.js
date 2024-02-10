@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getSession } from '@auth0/nextjs-auth0';
 import { postUser } from '../mindmaps/actions/postUser';
+import ThemeSwitcher from './ThemeSwitch'
 
 async function HeaderInfo() {
     let user
@@ -28,7 +29,7 @@ async function HeaderInfo() {
                 <Link 
                     href="/api/auth/logout" 
                     className="bg-transparent text-black border-[1px] border-green-600 cursor-pointer 
-                    text-sm hover:bg-green-600 hover:text-white transition"
+                    text-sm hover:bg-green-600 hover:text-white transition dark:text-white"
                 >Logout</Link>
             </>
             :
@@ -37,6 +38,7 @@ async function HeaderInfo() {
                 <Link href="/api/auth/login" className="bg-green-600 text-white cursor-pointer">Register</Link>
             </>
             }
+            <ThemeSwitcher />
         </div>
     </>
 }

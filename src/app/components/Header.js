@@ -6,14 +6,14 @@ function Header({children}) {
     const pathname = usePathname()
 
     return <>
-        <header className="h-16 border-b-2 px-20 flex items-center justify-between fixed top-0 left-0 right-0 bg-white z-10">
+        <header className="h-16 border-b-2 px-20 flex items-center justify-between fixed top-0 left-0 right-0 dark:bg-gray-800 bg-white z-40">
             <div className="flex items-center gap-6">
                 <h1 className="text-2xl font-bold text-green-600 whitespace-nowrap">Mindmap Flow</h1>
-                <nav>
+                <nav className="dark:text-white">
                     <ul 
                         className="
                             flex gap-3 [&>li>a]:text-[17px] [&>li>a]:py-2 [&>li>a]:px-4 [&>li>a]:whitespace-nowrap
-                            hover:[&>li>a:not(.active)]:bg-gray-100 [&>li>a]:rounded-md  
+                            hover:[&>li>a:not(.active)]:bg-gray-100 [&>li>a]:rounded-md dark:hover:[&>li>a:not(.active)]:bg-gray-700
                             [&>li>.active]:text-white [&>li>.active]:bg-green-600 transition
                         "
                     >

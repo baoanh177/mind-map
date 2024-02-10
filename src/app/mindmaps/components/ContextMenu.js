@@ -21,7 +21,7 @@ function MenuContext({ id, top, left, setContextMenu }) {
 
     return <>
         <div 
-            className={clsx("absolute bg-white rounded z-40 overflow-hidden cursor-pointer border flex flex-col select-none")}
+            className={clsx("absolute bg-white dark:bg-gray-900 rounded z-40 overflow-hidden cursor-pointer border flex flex-col select-none")}
             id="context-menu"
             style={{ top: `${top}px`, left: `${left}px`}}
         >

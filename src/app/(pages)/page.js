@@ -16,7 +16,7 @@ function Home() {
                 </Link>
             </div>
             <div className="grow flex justify-center">
-                <Image src={mindMap} alt="" className="w-[500px] h-auto" priority/>
+                <Image src={mindMap} alt="" className="h-[50vh] w-auto" priority/>
             </div>
         </div>
     )

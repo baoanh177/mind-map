@@ -32,7 +32,7 @@ function OwnerShareModal({ setShareModel, flow, dataId, userData, flows }) {
         <>
             <div
                 className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 
-                w-96 shadow-sm shadow-gray-600 border rounded-md bg-white z-30"
+                w-96 shadow-sm shadow-gray-600 border rounded-md bg-white z-30 dark:bg-gray-900 dark:border-black"
             >
                 <h3 className="text-2xl font-bold text-center mb-3">
                     Share Mindmap

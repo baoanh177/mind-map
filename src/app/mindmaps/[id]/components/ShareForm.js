@@ -42,7 +42,7 @@ function ShareForm({ loading, setLoading, flow }) {
                             name="shared_link"
                             defaultValue={window.location.href}
                             readOnly
-                            className="w-full h-full py-1 px-3 pr-7 outline-none"
+                            className="w-full h-full py-1 px-3 pr-7 outline-none dark:bg-gray-800"
                         />
                         <MdOutlineContentCopy 
                             className="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer" 
@@ -57,7 +57,7 @@ function ShareForm({ loading, setLoading, flow }) {
                             type="text"
                             name="title"
                             defaultValue={flow.share_data?.title ?? flowMeta.title}
-                            className="w-full h-full py-1 px-3 outline-none"
+                            className="w-full h-full py-1 px-3 outline-none dark:bg-gray-800"
                             placeholder="Title"
                         />
                     </div>
@@ -69,7 +69,7 @@ function ShareForm({ loading, setLoading, flow }) {
                             cols="30"
                             rows="3"
                             name="description"
-                            className="w-full h-full outline-none px-3 py-1"
+                            className="w-full h-full outline-none px-3 py-1 block dark:bg-gray-800"
                             placeholder="Description"
                             defaultValue={flow.share_data?.description ?? flowMeta.description ?? "Không có mô tả"}
                         ></textarea>
@@ -77,7 +77,8 @@ function ShareForm({ loading, setLoading, flow }) {
                 </div>
                 <div className="mt-2">
                     <span className="text-gray-600">Role</span>
-                    <select name="role" defaultValue={flow.share_data?.role} className="w-full outline-none h-9 border border-black rounded-md">
+                    <select name="role" defaultValue={flow.share_data?.role} 
+                        className="w-full outline-none h-9 border border-black rounded-md dark:bg-gray-800">
                         <option value="viewer">Viewer</option>
                         <option value="editor">Editor</option>
                     </select>
@@ -89,7 +90,7 @@ function ShareForm({ loading, setLoading, flow }) {
                             type="text"
                             defaultValue="https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
                             name="shared_image"
-                            className="w-full h-full py-1 px-3 outline-none"
+                            className="w-full h-full py-1 px-3 outline-none dark:bg-gray-800"
                             placeholder="Paste your link here"
                         />
                     </div>

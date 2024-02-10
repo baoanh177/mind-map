@@ -33,20 +33,20 @@ function Header({ flow, setShareModel }) {
             <button 
                 onClick={handleBack}
                 className="
-                    h-10 w-10 bg-white flex items-center justify-center rounded-sm shadow-sm 
+                    h-10 w-10 bg-white dark:bg-gray-800 flex items-center justify-center rounded-sm shadow-sm 
                     shadow-gray-400 hover:bg-gray-50 transition cursor-pointer
                 "
             >
                 <IoArrowBackCircleOutline className="text-2xl"/>
             </button>
-            <div className="flex gap-3 items-center h-10 bg-white px-4 py-1 rounded-sm shadow-sm shadow-gray-400">
+            <div className="flex gap-3 items-center h-10 bg-white dark:bg-gray-800 px-4 py-1 rounded-sm shadow-sm shadow-gray-400">
                 <h2 className="text-xl font-semibold text-green-600 select-none">Flow</h2>
                 {editable ? 
                 <input 
                     type="text" 
                     defaultValue={flow.title}
                     spellCheck={false}
-                    className="border-x-2 px-2 outline-none border-gray-400"
+                    className="border-x-2 px-2 outline-none border-gray-400 bg-transparent"
                     onChange={handleChangeTitle}
                 />:
                 <input 
@@ -54,7 +54,7 @@ function Header({ flow, setShareModel }) {
                     defaultValue={flow.title}
                     spellCheck={false}
                     readOnly
-                    className="border-x-2 px-2 outline-none border-gray-400"
+                    className="border-x-2 px-2 outline-none border-gray-400 bg-transparent"
                 />}
                 <Actions 
                     saveStatus={saveStatus} 

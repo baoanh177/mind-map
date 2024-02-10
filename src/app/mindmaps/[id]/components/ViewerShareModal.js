@@ -8,7 +8,7 @@ function ViewerShareModal() {
     return (
         <div
             className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 p-5 
-            w-96 shadow-sm shadow-gray-600 border rounded-md bg-white z-30"
+            w-96 shadow-sm shadow-gray-600 border rounded-md bg-white z-30 dark:bg-gray-900 dark:border-black"
         >
             <h3 className="text-2xl font-bold text-center mb-3">
                 Share Mindmap
@@ -22,7 +22,7 @@ function ViewerShareModal() {
                         name="shared_link"
                         defaultValue={window.location.href}
                         readOnly
-                        className="w-full h-full py-1 px-3 pr-7 outline-none"
+                        className="w-full h-full py-1 px-3 pr-7 outline-none dark:bg-gray-800"
                     />
                     <MdOutlineContentCopy
                         className="absolute right-2 top-1/2 -translate-y-1/2 cursor-pointer" 

@@ -10,16 +10,15 @@ function AddFlowModal({ userId }) {
 
     const handleCreateFlow = async e => {
         e.preventDefault()
-        if(isLoading) {
-            return
-        }
+        if(isLoading) return
+        
         setLoading(true)
 
         const formData = Object.fromEntries([...new FormData(e.target)])
         const newFlow = {
             id: uuid(),
             user_id: userId,
-            title: formData.title,
+            title: formData.title.trim() ? formData.title : "Untitled",
             isPublic: formData.status == 'public',
             description: formData.description ?? "Không có mô tả",
             created_at: new Date,
@@ -60,8 +59,8 @@ function AddFlowModal({ userId }) {
             <>
                 <div 
                     className="
-                        fixed top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3 p-8 z-20
-                        w-[400px] border rounded-xl bg-white shadow-md z-10 select-none
+                        fixed top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/3 p-8 z-50
+                        w-[400px] border rounded-xl bg-white dark:bg-gray-800 shadow-md select-none
                     "
                 >
                     <IoMdClose 
@@ -73,7 +72,7 @@ function AddFlowModal({ userId }) {
                         <input 
                             type="text" 
                             name="title" 
-                            className="border-b outline-none w-full p-1 border-green-600" 
+                            className="border-b outline-none w-full p-1 border-green-600 dark:bg-gray-900 rounded" 
                             placeholder="Title of Mind map *"
                         />
                         <div className="flex gap-5">
@@ -102,7 +101,7 @@ function AddFlowModal({ userId }) {
                     </form>
                 </div>
                 <div 
-                    className="bg-black fixed inset-0 bg-opacity-30 z-10"
+                    className="bg-black fixed inset-0 bg-opacity-30 z-40"
                     onClick={() => setModalOpen(false)}
                 ></div>
             </>

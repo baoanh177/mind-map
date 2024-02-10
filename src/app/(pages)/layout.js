@@ -7,7 +7,7 @@ function DefaultLayout({ children }) {
         <Header>
             <HeaderInfo/>
         </Header>
-        <main className="px-20 py-24 min-h-[calc(100vh)]">
+        <main className="px-20 py-24 min-h-[calc(100vh)] flex flex-col justify-center">
             { children }
         </main>
         <Footer />
