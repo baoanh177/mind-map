@@ -24,7 +24,7 @@ function FlowProvider({ children, flow, isOwner }) {
     }, [flow.data])
 
     useEffect(() => {
-        if(!isOwner && flow.share_data.role != 'editor') setEditable(false)
+        if(!isOwner && flow.share_data.role != "editor") setEditable(false)
     }, [flow, isOwner])
 
     return <>

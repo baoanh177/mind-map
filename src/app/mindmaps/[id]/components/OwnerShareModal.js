@@ -25,6 +25,7 @@ function OwnerShareModal({ setShareModel, flow, dataId, userData, flows }) {
                 { autoClose: 1500 }
             )
             setLoading(false)
+            setShareModel(false)
         }
     }
 

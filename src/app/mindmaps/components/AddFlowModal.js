@@ -64,7 +64,7 @@ function AddFlowModal({ userId }) {
                     "
                 >
                     <IoMdClose 
-                        className="absolute right-3 top-3 text-xl cursor-pointer w-7 h-7 hover:bg-gray-100 transition rounded-[50%]" 
+                        className="absolute right-3 top-3 text-xl cursor-pointer w-7 h-7 hover:bg-gray-100 dark:hover:bg-gray-700 transition rounded-[50%]" 
                         onClick={() => setModalOpen(false)} 
                     />
                     <div className="text-2xl font-semibold text-center mb-5">Create new Mind map</div>
@@ -74,6 +74,7 @@ function AddFlowModal({ userId }) {
                             name="title" 
                             className="border-b outline-none w-full p-1 border-green-600 dark:bg-gray-900 rounded" 
                             placeholder="Title of Mind map *"
+                            autoFocus
                         />
                         <div className="flex gap-5">
                             <div className="flex items-center gap-1 [&>*]:cursor-pointer">

@@ -10,6 +10,6 @@ export const deleteFlow = async id => {
         method: "DELETE",
         body: JSON.stringify(id)
     })
-    if(!response.ok) return console.log("Delete failed", id)
+    if(!response.ok) return false
     revalidateTag("flows")
 }

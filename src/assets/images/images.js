@@ -6,6 +6,7 @@ import member2 from "./member2.jpg"
 import member3 from "./member3.jpg"
 import member4 from "./member4.jpg"
 import mindmapDesc from "./mind-map-desc.png"
+import feature from "./feature-img.png"
 
 export const images = {
     favicon,
@@ -15,5 +16,6 @@ export const images = {
     member2,
     member3,
     member4,
-    mindmapDesc
+    mindmapDesc,
+    feature
 }

@@ -11,7 +11,7 @@ function Home() {
                     Miro’s mind map maker is the quickest, easiest way for teams to capture, <br/>
                     organize, and map out their ideas in a structured way.
                 </p>
-                <Link href="/" className="bg-green-600 text-white py-3 px-5 rounded-lg text-[17px] cursor-pointer">
+                <Link href="/mindmaps" className="bg-green-600 text-white py-3 px-5 rounded-lg text-[17px] cursor-pointer">
                     Try it for free
                 </Link>
             </div>

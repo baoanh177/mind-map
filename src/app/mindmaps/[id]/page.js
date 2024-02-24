@@ -20,20 +20,18 @@ function Mindmap() {
     const { screenToFlowPosition } = useReactFlow()
     const nodeTypes = useMemo(() => ({ editNode: EditNode }), [])
 
-    useEffect(() => {
-        document.onkeydown = async e => {
-            if(saveStatus == "noSave" && editable) {
-                if (e.key === 's' && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
-                    e.preventDefault()
-                    await updateFlow(flow, {
-                        ...flowMeta,
-                        data: {nodes, edges}
-                    })
-                    setSaveStatus("saved")
-                }
+    document.onkeydown = async e => {
+        if(saveStatus == "noSave" && editable) {
+            if (e.key === 's' && (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)) {
+                e.preventDefault()
+                await updateFlow(flow, {
+                    ...flowMeta,
+                    data: {nodes, edges}
+                })
+                setSaveStatus("saved")
             }
         }
-    }, [nodes, edges])
+    }
 
     const getChildNodePosition = (event, parentNode) => {
         const panePosition = screenToFlowPosition({
@@ -109,13 +107,11 @@ function Mindmap() {
         <div className="w-full h-full react-flow__pane">
             <ReactFlow
                 nodeTypes={nodeTypes}
-                edgesFocusable={false}
-                nodesFocusable={false}
                 nodesDraggable={editable}
                 nodes={nodes}
                 edges={edges}
                 fitView
-                deleteKeyCode={editable && 'Delete'}
+                deleteKeyCode={editable && 'Backspace'}
                 onNodesChange={onNodesChange}
                 onEdgesChange={onEdgesChange}
                 onConnect={onConnect}

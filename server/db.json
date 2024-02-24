@@ -15,273 +15,15 @@
   ],
   "flows": [
     {
-      "id": "5f96a536-ec62-4902-b5fd-3dec0f15e10a",
+      "id": "bbb39635-8839-416e-8e15-1078ebdec37a",
       "user_id": "google-oauth2|103830982682161665865",
-      "title": "New mindmapss",
-      "isPublic": true,
+      "title": "Private mindmap",
+      "isPublic": false,
       "description": "Không có mô tả",
-      "created_at": "2024-01-30T09:48:31.089Z",
+      "created_at": "2024-02-12T16:58:20.521Z",
       "share_data": {
-        "shared_link": "http://localhost:3000/mindmaps/5f96a536-ec62-4902-b5fd-3dec0f15e10a",
-        "title": "New mindmap",
+        "title": "Private mindmap",
         "description": "Không có mô tả",
-        "role": "viewer",
-        "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
-      },
-      "data": {
-        "nodes": [
-          {
-            "id": "0",
-            "position": {
-              "x": -36,
-              "y": -111
-            },
-            "data": {
-              "label": "Mindmap Flow"
-            },
-            "type": "input",
-            "deletable": false,
-            "width": 150,
-            "height": 40,
-            "selected": false,
-            "positionAbsolute": {
-              "x": -36,
-              "y": -111
-            },
-            "dragging": false
-          },
-          {
-            "id": "1",
-            "position": {
-              "x": -259,
-              "y": 16.5
-            },
-            "type": "",
-            "data": {
-              "label": "Node 1"
-            },
-            "width": 150,
-            "height": 40,
-            "selected": false,
-            "positionAbsolute": {
-              "x": -259,
-              "y": 16.5
-            },
-            "dragging": false
-          },
-          {
-            "id": "2",
-            "position": {
-              "x": -95,
-              "y": 46.5
-            },
-            "type": "",
-            "data": {
-              "label": "Node 2"
-            },
-            "width": 150,
-            "height": 40,
-            "selected": false,
-            "positionAbsolute": {
-              "x": -95,
-              "y": 46.5
-            },
-            "dragging": false
-          },
-          {
-            "id": "3",
-            "position": {
-              "x": 118,
-              "y": 75
-            },
-            "type": "",
-            "data": {
-              "label": "Node 3"
-            },
-            "width": 150,
-            "height": 40,
-            "selected": false,
-            "positionAbsolute": {
-              "x": 118,
-              "y": 75
-            },
-            "dragging": false
-          },
-          {
-            "id": "4",
-            "position": {
-              "x": 171.25,
-              "y": -14
-            },
-            "type": "",
-            "data": {
-              "label": "Node 4"
-            },
-            "width": 150,
-            "height": 40
-          }
-        ],
-        "edges": [
-          {
-            "id": "f0-1",
-            "source": "0",
-            "target": "1"
-          },
-          {
-            "id": "f0-2",
-            "source": "0",
-            "target": "2"
-          },
-          {
-            "id": "f0-3",
-            "source": "0",
-            "target": "3"
-          },
-          {
-            "id": "f0-4",
-            "source": "0",
-            "target": "4"
-          }
-        ]
-      }
-    },
-    {
-      "id": "10dada45-9089-4533-a680-69801df38937",
-      "user_id": "google-oauth2|103830982682161665865",
-      "title": "Tests",
-      "isPublic": true,
-      "description": "Không có mô tả",
-      "created_at": "2024-02-04T19:41:34.242Z",
-      "share_data": {
-        "shared_link": "http://localhost:3000/mindmaps/10dada45-9089-4533-a680-69801df38937",
-        "title": "Test",
-        "description": "Không có mô tả",
-        "role": "viewer",
-        "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
-      },
-      "data": {
-        "nodes": [
-          {
-            "id": "0",
-            "position": {
-              "x": -33.5,
-              "y": -81.5
-            },
-            "data": {
-              "label": "Mindmap Flow"
-            },
-            "type": "input",
-            "deletable": false,
-            "width": 150,
-            "height": 40,
-            "selected": false,
-            "positionAbsolute": {
-              "x": -33.5,
-              "y": -81.5
-            },
-            "dragging": false
-          },
-          {
-            "id": "1",
-            "position": {
-              "x": -111.75,
-              "y": 28.5
-            },
-            "type": "",
-            "data": {
-              "label": "Node 1"
-            },
-            "width": 150,
-            "height": 40,
-            "selected": false,
-            "positionAbsolute": {
-              "x": -111.75,
-              "y": 28.5
-            },
-            "dragging": false
-          },
-          {
-            "id": "2",
-            "position": {
-              "x": 65.25,
-              "y": 102
-            },
-            "type": "",
-            "data": {
-              "label": "Node 2"
-            },
-            "width": 150,
-            "height": 40
-          },
-          {
-            "id": "3",
-            "position": {
-              "x": 145.75,
-              "y": 8.5
-            },
-            "type": "",
-            "data": {
-              "label": "Node 3"
-            },
-            "width": 150,
-            "height": 40,
-            "selected": false,
-            "positionAbsolute": {
-              "x": 145.75,
-              "y": 8.5
-            },
-            "dragging": false
-          },
-          {
-            "id": "4",
-            "position": {
-              "x": -166.5165321408661,
-              "y": 124.20708908424669
-            },
-            "type": "",
-            "data": {
-              "label": "Node 4"
-            },
-            "width": 150,
-            "height": 40
-          }
-        ],
-        "edges": [
-          {
-            "id": "f0-1",
-            "source": "0",
-            "target": "1"
-          },
-          {
-            "id": "f0-2",
-            "source": "0",
-            "target": "2"
-          },
-          {
-            "id": "f0-3",
-            "source": "0",
-            "target": "3"
-          },
-          {
-            "id": "f1-4",
-            "source": "1",
-            "target": "4"
-          }
-        ]
-      }
-    },
-    {
-      "id": "15c6dc78-bdfe-42f5-a4c9-2a6828bb5986",
-      "user_id": "google-oauth2|103830982682161665865",
-      "title": "Untitled",
-      "isPublic": true,
-      "description": "Không có mô tả",
-      "created_at": "2024-02-08T06:33:17.733Z",
-      "share_data": {
-        "shared_link": "http://localhost:3000/mindmaps/15c6dc78-bdfe-42f5-a4c9-2a6828bb5986",
-        "title": "",
-        "description": "Không có mô tả",
-        "role": "viewer",
         "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
       },
       "data": {
@@ -300,6 +42,137 @@
           }
         ],
         "edges": []
+      }
+    },
+    {
+      "id": "51f0fb1e-4564-4f04-a726-396b35d48cf0",
+      "user_id": "google-oauth2|103830982682161665865",
+      "title": "Public mindmapa",
+      "isPublic": false,
+      "description": "Không có mô tả",
+      "created_at": "2024-02-14T16:24:13.943Z",
+      "share_data": {
+        "shared_link": "http://localhost:3000/mindmaps/51f0fb1e-4564-4f04-a726-396b35d48cf0",
+        "title": "Public mindmap",
+        "description": "Không có mô tả",
+        "role": "viewer",
+        "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
+      },
+      "data": {
+        "nodes": [
+          {
+            "id": "0",
+            "position": {
+              "x": -5.5,
+              "y": -251
+            },
+            "data": {
+              "label": "Mindmap Flow"
+            },
+            "type": "input",
+            "deletable": false,
+            "selected": false,
+            "positionAbsolute": {
+              "x": -5.5,
+              "y": -251
+            },
+            "dragging": false,
+            "width": 150,
+            "height": 40
+          },
+          {
+            "id": "1",
+            "position": {
+              "x": -160,
+              "y": -102
+            },
+            "type": "",
+            "data": {
+              "label": "Node 1"
+            },
+            "width": 150,
+            "height": 40,
+            "selected": true,
+            "positionAbsolute": {
+              "x": -160,
+              "y": -102
+            },
+            "dragging": false
+          },
+          {
+            "id": "2",
+            "position": {
+              "x": 32,
+              "y": -122.5
+            },
+            "type": "",
+            "data": {
+              "label": "Node 2"
+            },
+            "width": 150,
+            "height": 40,
+            "selected": false,
+            "positionAbsolute": {
+              "x": 32,
+              "y": -122.5
+            },
+            "dragging": false
+          },
+          {
+            "id": "3",
+            "position": {
+              "x": 132,
+              "y": -48.5
+            },
+            "type": "",
+            "data": {
+              "label": "Node 3"
+            },
+            "width": 150,
+            "height": 40
+          },
+          {
+            "id": "4",
+            "position": {
+              "x": 146,
+              "y": -185.5
+            },
+            "type": "",
+            "data": {
+              "label": "Node 4"
+            },
+            "width": 150,
+            "height": 40,
+            "selected": false,
+            "positionAbsolute": {
+              "x": 146,
+              "y": -185.5
+            },
+            "dragging": false
+          }
+        ],
+        "edges": [
+          {
+            "id": "f0-1",
+            "source": "0",
+            "target": "1"
+          },
+          {
+            "id": "f0-2",
+            "source": "0",
+            "target": "2"
+          },
+          {
+            "id": "f2-3",
+            "source": "2",
+            "target": "3"
+          },
+          {
+            "id": "f0-4",
+            "source": "0",
+            "target": "4"
+          }
+        ]
       }
     }
   ]
