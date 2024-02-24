@@ -10,7 +10,7 @@ import ReactFlow, {
 } from "reactflow"
 import { useCallback, useRef, useMemo, useContext, useEffect } from "react"
 import "reactflow/dist/style.css"
-import EditNode from "./components/nodes/EditNode"
+import { EditNode, CircleNode } from "./components/nodes"
 import { FlowContext } from "~/providers/FlowProvider"
 import { updateFlow } from "../actions/updateFlow"
 
@@ -18,7 +18,10 @@ function Mindmap() {
     const connectingNodeId = useRef(null)
     const { nodes, setNodes, edges, setEdges, saveStatus, setSaveStatus, flowMeta, flow, editable } = useContext(FlowContext)
     const { screenToFlowPosition } = useReactFlow()
-    const nodeTypes = useMemo(() => ({ editNode: EditNode }), [])
+    const nodeTypes = useMemo(() => ({ 
+        editNode: EditNode,
+        circle: CircleNode
+    }), [])
 
     document.onkeydown = async e => {
         if(saveStatus == "noSave" && editable) {
@@ -45,7 +48,7 @@ function Mindmap() {
         }
     }
 
-    const handleNodeDoubleClick = (e, activeNode) => {
+    const onNodeDoubleClick = (e, activeNode) => {
         if(editable) {
             const newNodes = nodes.map(node => {
                 if(node.id == activeNode.id) {
@@ -103,6 +106,33 @@ function Mindmap() {
         }
     }, [nodes, edges])
 
+    const onDrop = event => {
+        const type = event.dataTransfer.getData('application/reactflow')
+
+        if (typeof type === 'undefined' || !type) {
+            return
+        }
+
+        const targetIsPane = event.target.classList.contains("react-flow__pane")
+
+        if (targetIsPane) {
+            const childNodePosition = getChildNodePosition(event, nodes[0])
+            const newNodeId = (+nodes[nodes.length - 1].id + 1).toString()
+            const newNode = {
+                id: newNodeId,
+                type,
+                position: childNodePosition,
+                data: { label: `node` },
+            }
+            setNodes([...nodes, newNode])
+        }
+    }
+    
+    const onDragOver = event => {
+        event.preventDefault()
+        event.dataTransfer.dropEffect = "move"
+    }
+
     return (
         <div className="w-full h-full react-flow__pane">
             <ReactFlow
@@ -116,8 +146,10 @@ function Mindmap() {
                 onEdgesChange={onEdgesChange}
                 onConnect={onConnect}
                 onConnectEnd={onConnectEnd}
-                onNodeDoubleClick={handleNodeDoubleClick}
+                onNodeDoubleClick={onNodeDoubleClick}
                 onConnectStart={onConnectStart}
+                onDragOver={onDragOver}
+                onDrop={onDrop}
             >
                 <Background variant="dots" />
                 <MiniMap />

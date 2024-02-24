@@ -55,12 +55,14 @@
         "shared_link": "http://localhost:3000/mindmaps/51f0fb1e-4564-4f04-a726-396b35d48cf0",
         "title": "Public mindmap",
         "description": "Không có mô tả",
-        "role": "viewer",
+        "role": "editor",
         "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
       },
       "data": {
         "nodes": [
           {
+            "width": 150,
+            "height": 40,
             "id": "0",
             "position": {
               "x": -5.5,
@@ -81,10 +83,12 @@
             "height": 40
           },
           {
+            "width": 150,
+            "height": 40,
             "id": "1",
             "position": {
-              "x": -160,
-              "y": -102
+              "x": -167.5,
+              "y": -32.5
             },
             "type": "",
             "data": {
@@ -92,61 +96,50 @@
             },
             "width": 150,
             "height": 40,
-            "selected": true,
+            "selected": false,
             "positionAbsolute": {
-              "x": -160,
-              "y": -102
+              "x": -167.5,
+              "y": -32.5
             },
             "dragging": false
           },
           {
+            "width": 150,
+            "height": 40,
             "id": "2",
             "position": {
-              "x": 32,
-              "y": -122.5
+              "x": -95,
+              "y": 46.5
             },
             "type": "",
             "data": {
-              "label": "Node 2"
+              "label": "Node JS"
             },
-            "width": 150,
-            "height": 40,
             "selected": false,
             "positionAbsolute": {
-              "x": 32,
-              "y": -122.5
+              "x": -95,
+              "y": 46.5
             },
             "dragging": false
           },
           {
+            "width": 150,
+            "height": 40,
             "id": "3",
             "position": {
-              "x": 132,
-              "y": -48.5
+              "x": 118,
+              "y": 75
             },
             "type": "",
             "data": {
-              "label": "Node 3"
-            },
-            "width": 150,
-            "height": 40
-          },
-          {
-            "id": "4",
-            "position": {
-              "x": 146,
-              "y": -185.5
-            },
-            "type": "",
-            "data": {
-              "label": "Node 4"
+              "label": "Node nhạc"
             },
             "width": 150,
             "height": 40,
-            "selected": false,
+            "selected": true,
             "positionAbsolute": {
-              "x": 146,
-              "y": -185.5
+              "x": 118,
+              "y": 75
             },
             "dragging": false
           }
@@ -170,7 +163,7 @@
           {
             "id": "f0-4",
             "source": "0",
-            "target": "4"
+            "target": "3"
           }
         ]
       }

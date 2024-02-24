@@ -5,15 +5,16 @@ import clsx from "clsx"
 import OwnerShareModal from "./OwnerShareModal"
 import { FlowContext } from "~/providers/FlowProvider"
 import ViewerShareModal from "./ViewerShareModal"
+import NodeOptions from "./NodeOptions"
 
-function ToolLayout({ children, id, flow, flows }) {
+function ToolLayout({ children, id, flow, flows, user_id }) {
     const [shareModel, setShareModel] = useState(false)
     const { editable } = useContext(FlowContext)
 
     return <>
         <Header flowId={id} flow={flow} setShareModel={setShareModel}/>
         {shareModel && <Fragment>
-            {editable ?
+            {user_id == flow.user_id ?
             <OwnerShareModal setShareModel={setShareModel} flows={flows} flow={flow}/>:
             <ViewerShareModal />}    
             <div
@@ -21,6 +22,7 @@ function ToolLayout({ children, id, flow, flows }) {
                 onClick={() => setShareModel(false)}
             ></div>
         </Fragment>}
+        {/* <NodeOptions /> */}
         {children}
     </>
 }

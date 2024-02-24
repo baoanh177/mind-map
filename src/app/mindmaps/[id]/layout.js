@@ -37,7 +37,7 @@ async function MindmapLayout({ params, children }) {
 
     return <>
         <FlowProvider flow={flow} isOwner={isOwner}>
-            <ToolLayout id={id} flow={flow} />
+            <ToolLayout id={id} flow={flow} user_id={userSession?.user.sub}/>
             <main className="h-[100vh] flex">
                 { children }
             </main>
