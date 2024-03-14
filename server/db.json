@@ -15,45 +15,15 @@
   ],
   "flows": [
     {
-      "id": "bbb39635-8839-416e-8e15-1078ebdec37a",
+      "id": "f3cc24ac-43df-4987-94f1-4a59dd5476ce",
       "user_id": "google-oauth2|103830982682161665865",
-      "title": "Private mindmap",
-      "isPublic": false,
+      "title": "123123",
+      "isPublic": true,
       "description": "Không có mô tả",
-      "created_at": "2024-02-12T16:58:20.521Z",
+      "created_at": "2024-03-14T16:22:39.374Z",
       "share_data": {
-        "title": "Private mindmap",
-        "description": "Không có mô tả",
-        "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
-      },
-      "data": {
-        "nodes": [
-          {
-            "id": "0",
-            "position": {
-              "x": 0,
-              "y": 0
-            },
-            "data": {
-              "label": "Mindmap Flow"
-            },
-            "type": "input",
-            "deletable": false
-          }
-        ],
-        "edges": []
-      }
-    },
-    {
-      "id": "51f0fb1e-4564-4f04-a726-396b35d48cf0",
-      "user_id": "google-oauth2|103830982682161665865",
-      "title": "Public mindmapa",
-      "isPublic": false,
-      "description": "Không có mô tả",
-      "created_at": "2024-02-14T16:24:13.943Z",
-      "share_data": {
-        "shared_link": "http://localhost:3000/mindmaps/51f0fb1e-4564-4f04-a726-396b35d48cf0",
-        "title": "Public mindmap",
+        "shared_link": "http://localhost:3000/mindmaps/f3cc24ac-43df-4987-94f1-4a59dd5476ce",
+        "title": "123123",
         "description": "Không có mô tả",
         "role": "editor",
         "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
@@ -61,87 +31,37 @@
       "data": {
         "nodes": [
           {
-            "width": 150,
-            "height": 40,
             "id": "0",
             "position": {
-              "x": -5.5,
-              "y": -251
+              "x": -61.5,
+              "y": -104
             },
             "data": {
-              "label": "Mindmap Flow"
+              "label": "Node Ruồi"
             },
             "type": "input",
             "deletable": false,
-            "selected": false,
-            "positionAbsolute": {
-              "x": -5.5,
-              "y": -251
-            },
-            "dragging": false,
-            "width": 150,
-            "height": 40
-          },
-          {
             "width": 150,
             "height": 40,
+            "selected": false,
+            "positionAbsolute": {
+              "x": -61.5,
+              "y": -104
+            },
+            "dragging": false
+          },
+          {
             "id": "1",
             "position": {
-              "x": -167.5,
-              "y": -32.5
+              "x": -132,
+              "y": 13.5
             },
             "type": "",
             "data": {
               "label": "Node 1"
             },
             "width": 150,
-            "height": 40,
-            "selected": false,
-            "positionAbsolute": {
-              "x": -167.5,
-              "y": -32.5
-            },
-            "dragging": false
-          },
-          {
-            "width": 150,
-            "height": 40,
-            "id": "2",
-            "position": {
-              "x": -95,
-              "y": 46.5
-            },
-            "type": "",
-            "data": {
-              "label": "Node JS"
-            },
-            "selected": false,
-            "positionAbsolute": {
-              "x": -95,
-              "y": 46.5
-            },
-            "dragging": false
-          },
-          {
-            "width": 150,
-            "height": 40,
-            "id": "3",
-            "position": {
-              "x": 118,
-              "y": 75
-            },
-            "type": "",
-            "data": {
-              "label": "Node nhạc"
-            },
-            "width": 150,
-            "height": 40,
-            "selected": true,
-            "positionAbsolute": {
-              "x": 118,
-              "y": 75
-            },
-            "dragging": false
+            "height": 40
           }
         ],
         "edges": [
@@ -149,21 +69,123 @@
             "id": "f0-1",
             "source": "0",
             "target": "1"
+          }
+        ]
+      }
+    },
+    {
+      "id": "81748188-3c82-4c36-b7a6-e93cb1e64138",
+      "user_id": "google-oauth2|103830982682161665865",
+      "title": "Untitled",
+      "isPublic": true,
+      "description": "Không có mô tả",
+      "created_at": "2024-03-14T16:32:56.456Z",
+      "share_data": {
+        "title": "",
+        "description": "Không có mô tả",
+        "shared_image": "https://brandshark.com/wp-content/uploads/2023/02/9DEEF7F5-C215-43B9-BEBD-C8856AF52E30-1080x675.jpeg"
+      },
+      "data": {
+        "nodes": [
+          {
+            "id": "0",
+            "position": {
+              "x": -77.5,
+              "y": -114.5
+            },
+            "data": {
+              "label": "Mindmap Flow"
+            },
+            "type": "input",
+            "deletable": false,
+            "width": 150,
+            "height": 40,
+            "selected": false,
+            "positionAbsolute": {
+              "x": -77.5,
+              "y": -114.5
+            },
+            "dragging": false
           },
+          {
+            "id": "2",
+            "position": {
+              "x": 1,
+              "y": -55
+            },
+            "type": "",
+            "data": {
+              "label": "Node 2"
+            },
+            "width": 150,
+            "height": 40
+          },
+          {
+            "id": "3",
+            "position": {
+              "x": -221.75,
+              "y": -7.375
+            },
+            "type": "",
+            "data": {
+              "label": "Node 3"
+            },
+            "width": 150,
+            "height": 40
+          },
+          {
+            "id": "4",
+            "position": {
+              "x": -47.25,
+              "y": 15.625
+            },
+            "type": "",
+            "data": {
+              "label": "Node 4"
+            },
+            "width": 150,
+            "height": 40
+          },
+          {
+            "id": "5",
+            "position": {
+              "x": 135.39310969742735,
+              "y": 47.87217004476577
+            },
+            "type": "",
+            "data": {
+              "label": "Node 5"
+            },
+            "width": 150,
+            "height": 40,
+            "selected": true,
+            "positionAbsolute": {
+              "x": 135.39310969742735,
+              "y": 47.87217004476577
+            },
+            "dragging": false
+          }
+        ],
+        "edges": [
           {
             "id": "f0-2",
             "source": "0",
             "target": "2"
           },
           {
-            "id": "f2-3",
-            "source": "2",
+            "id": "f0-3",
+            "source": "0",
             "target": "3"
           },
           {
-            "id": "f0-4",
-            "source": "0",
-            "target": "3"
+            "id": "f2-4",
+            "source": "2",
+            "target": "4"
+          },
+          {
+            "id": "f2-5",
+            "source": "2",
+            "target": "5"
           }
         ]
       }

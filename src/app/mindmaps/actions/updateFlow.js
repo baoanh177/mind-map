@@ -14,5 +14,5 @@ export const updateFlow = async (flow, updateData) => {
         body: JSON.stringify(flow)
     })
     if(!response.ok) return false
-    revalidateTag("flows")
+    // revalidateTag("flows")
 }

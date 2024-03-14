@@ -63,6 +63,7 @@ function Header({ flow, setShareModel }) {
                     nodes={nodes} 
                     edges={edges} 
                     flowMeta={flowMeta} 
+                    editable={editable}
                     setShareModel={setShareModel}
                 />
             </div>

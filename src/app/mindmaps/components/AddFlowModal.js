@@ -36,7 +36,7 @@ function AddFlowModal({ userId }) {
                         y: 0,
                     },
                     data: {
-                        label: "Node Ruồi",
+                        label: "Mindmap Flow",
                     },
                     type: "input",
                     deletable: false,
